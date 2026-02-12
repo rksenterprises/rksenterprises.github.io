@@ -1,0 +1,655 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+/* HEADER */
+.main-header {
+  background: #0f2a44;
+  padding: 15px 0;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.nav a.active,
+.nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* HERO */
+.home-hero {
+  height: 60vh;
+  background: url('../images/hero.jpg') center right/cover no-repeat;
+}
+
+.hero-overlay {
+  height: 100%;
+  display: flex;
+  align-items: center;          /* ✅ vertical center */
+  justify-content: flex-start;  /* left aligned */
+  padding: 0 80px;
+  background: linear-gradient(
+rgba(210,225,240,0.75),  
+rgba(15,42,68,0.60),
+  
+  );
+}
+
+.hero-overlay h1 {
+  font-size: 42px;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* SECTIONS */
+.home-section {
+  padding: 60px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #0f2a44;
+}
+
+/* GRID */
+.services-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #f7f9fb;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.service-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.service-content h3 {
+  color: #0f2a44;
+  margin-bottom: 10px;
+}
+
+.service-content p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+.main-footer {
+  background: #0f2a44;
+  color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 40px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 30px;
+  }
+}
+.main-footer {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 40px 20px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-box h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+.footer-box p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.footer-box a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.footer-box a:hover {
+  color: #38bdf8;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #cbd5f5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* HEADER */
+.site-header {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.site-header h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.site-header p {
+    font-size: 14px;
+    margin-top: 6px;
+    color: #ccc;
+}
+
+/* CONTACT SECTION */
+.contact-wrapper {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contact-wrapper h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 15px;
+    color: #555;
+}
+
+/* FLEX CONTAINER */
+.contact-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* FORM */
+.contact-form,
+.contact-details {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form h3,
+.contact-details h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background: #333;
+}
+
+/* CONTACT DETAILS */
+
+.contact-details p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+
+.contact-icon {
+    width: 36px;
+    height: 36px;
+    background: #eef3f7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0f2a44;
+    font-size: 17px;
+}
+
+.contact-icon.whatsapp {
+    color: #25D366;
+}
+
+.contact-details a {
+    text-decoration: none;
+    color:  #0066cc;
+    font-weight: 600;
+}
+.contact-details p {
+
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.contact-details a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* MAP */
+.map-container {
+    margin-top: 40px;
+    width: 100%;
+    height: 350px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+.site-footer {
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+Service code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services | RKS Enterprises</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Glass, Aluminium and Interior Services by RKS Enterprises">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="header-container">
+    <img src="images/logo.png" alt="RKS Enterprises Logo" class="logo">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="quote-btn">
+        Get Quotation
+    </nav>
+  </div>
+</header>
+
+<section class="services-section">
+  <h1 class="section-title">Our Services</h1>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <img src="images/glass.jpg" alt="Architectural Glass Works">
+      <div class="service-content">
+        <h3>Architectural Glass Works</h3>
+        <p>High-quality glass installations for commercial and residential spaces with modern aesthetics.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/acp.jpg" alt="ACP Cladding Solutions">
+      <div class="service-content">
+        <h3>ACP Cladding Solutions</h3>
+        <p>Durable and stylish ACP cladding systems for exterior and façade applications.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/wpc.jpg" alt="WPC Ceiling & Wall Panels">
+      <div class="service-content">
+        <h3>WPC Ceiling & Wall Panels</h3>
+        <p>Premium WPC solutions offering durability, elegance, and moisture resistance.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/aluminium.jpg" alt="Aluminium Fabrication">
+      <div class="service-content">
+        <h3>Aluminium Fabrication</h3>
+        <p>Precision aluminium fabrication for doors, windows, partitions, and structural works.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/louvre.jpg" alt="Louvre Systems & Sun Control">
+      <div class="service-content">
+        <h3>Louvre Systems & Sun Control</h3>
+        <p>Advanced louvre systems designed for ventilation, daylight control, and heat reduction.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/hpl.jpg" alt="HPL Cladding">
+      <div class="service-content">
+        <h3>HPL Cladding</h3>
+        <p>High Pressure Laminate cladding solutions offering strength, color stability, and design flexibility.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/balcony.jpg" alt="Balcony Glass & Railings">
+      <div class="service-content">
+        <h3>Balcony Glass & Railings</h3>
+        <p>Modern balcony glass railings providing safety while maintaining clear open views.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/staircase.jpg" alt="Staircase Glass Works">
+      <div class="service-content">
+        <h3>Staircase Glass Works</h3>
+        <p>Stylish glass staircases and handrails enhancing interior luxury and openness.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/bathroom.jpg" alt="Bathroom Glass Solutions">
+      <div class="service-content">
+        <h3>Bathroom Glass Solutions</h3>
+        <p>Custom glass shower enclosures and partitions for elegant and functional bathrooms.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="footer-container">
+
+    <div class="footer-box">
+      <h3>Contact Details</h3>
+      <p>📞 Call: <a href="tel:+919994441807">+91 99944 41807</a></p>
+      <p>💬 WhatsApp: <a href="https://wa.me/917667838755">+91 76678 38755</a></p>
+      <p>✉️ Email: <a href="mailto:rksenterprises1807@gmail.com">rksenterprises1807@gmail.com</a></p>
+      <p>📍 Singanallur, Coimbatore, Tamil Nadu, India</p>
+    </div>
+
+  </div>
+
+  <p class="footer-copy">
+    © 2024 RKS Enterprises. All rights reserved.
+  </p>
+</footer>
+
+/* WHY CHOOSE US */
+.why-choose-section {
+  background: #ffffff;
+  padding: 60px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-header span {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #466D88;
+  margin: 15px auto 0;
+  border-radius: 10px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.why-card {
+  text-align: center;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+}
+
+.why-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.why-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.7;
+  max-width: 260px;
+  margin: auto;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+}
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background:  #3E5C76;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.whatsapp-btn:hover {
+    background: #2F4F6F;
+    color: #ffff;
+    transform: translateY(-1px);
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* GET QUOTATION BUTTON */
+.quote-btn {
+    background: #3E5C76;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.quote-btn:hover {
+    background: #2F4F6F;
+    transform: translateY(-1px);
+}
+
+/* Auto Scroll Section */
+.auto-scroll-section {
+  width: 100%;
+  overflow: hidden;
+  background: #f8f9fa;
+  padding: 30px 0;
+}
+
+.scroll-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-track {
+  display: flex;
+  width: calc(300px * 18);
+  animation: scroll 35s linear infinite;
+}
+
+.scroll-track img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+/* pause scrolling on hover */
+.scroll-track:hover {
+  animation-play-state: paused;
+}
+
+.scroll-track img:hover {
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
