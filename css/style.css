@@ -358,12 +358,6 @@ body {
         flex-direction: column;
     }
 }
-
-
-
-
-
-
 Service code
 <!DOCTYPE html>
 <html lang="en">
@@ -653,4 +647,8 @@ Service code
   }
 }
 }
+.thankyou-page {
+    background: #e6f2ff;   /* change this color */
+}
+
 
